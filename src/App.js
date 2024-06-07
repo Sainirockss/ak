@@ -1,24 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Item from './Item';
+import ItemDate from './ItemDate';
+import NewProduct from './NewProduct';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div>
+    <NewProduct/>
+    <Item name = "nirma">
+      i am the champ that runs the camp
+    </Item>
+
+    <ItemDate date= "12" month="12" year="2008"/>
+    
+    <Item name = "chamkila"/>
+    <ItemDate date= "19" month="06" year="1992"/>
+    
+    <Item name = "chitkara"/>
+    <ItemDate date= "99" month="34" year="2192"/>
+
+   
+    <div className='App'>
+      hello world
     </div>
+</div>
+    
   );
 }
 
